@@ -1,12 +1,11 @@
-import React from "react";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Jumbotron, Button, Form, Container, Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
+import { Col, Container, Form, Jumbotron, Row } from "react-bootstrap";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
+import "./App.css";
 import OneSong from "./components/OneSong";
-import Song from "./types/song";
 import SongDetail from "./components/SongDetail";
+import Song from "./types/song";
 
 function App() {
   const [songs, setSongs] = useState<Song[]>([]);
